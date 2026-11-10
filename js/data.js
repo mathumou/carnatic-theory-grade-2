@@ -1,14 +1,14 @@
 /**
  * Carnatic Music Theory - Grade 2 (அறிமுறை தரம் - 2)
  * Comprehensive syllabus content, questions, flashcards, and exam papers
- * Based on Sahitya Sruthilaya Music College syllabus.
+ * Carnatic Music Vocal Theory Grade 2 Syllabus.
  */
 
 const SYLLABUS_DATA = {
   grade: "Grade 2 / தரம் - 2",
   titleTamil: "அறிமுறை தரம் - 2 (Theory Grade - 2)",
   titleEnglish: "Carnatic Music Theory Grade - 2",
-  institution: "சாகித்ய சுருதிலயா இசைக்கல்லூரி (Sahitya Sruthilaya Music College)",
+  institution: "கர்நாடக சங்கீத அறிமுறை (Carnatic Music Theory)",
 
   // ==========================================
   // TOPIC 1: INTRODUCTORY DEFINITIONS (அறிமுக விளக்கம்)

@@ -1,5 +1,5 @@
 # 🎵 கர்நாடக சங்கீத அறிமுறை தரம் 2 (Carnatic Music Theory Grade 2)
-### Sahitya Sruthilaya Music College Syllabus Interactive Learning & Trial Exam Portal
+### Carnatic Music Grade 2 Syllabus Interactive Learning & Trial Exam Portal
 
 An interactive, kid-friendly web application designed to help young Carnatic vocal students master Grade 2 Music Theory and excel in their written exams.
 
@@ -45,7 +45,7 @@ An interactive, kid-friendly web application designed to help young Carnatic voc
    - Synthesizes realistic Indian tanpura drone (Pa-Sa-Sa-Sa) in any pitch (C, C#, D, D#, E, F, G, A / 1st to 6th Kattai) using pure Web Audio API without any external dependencies!
 
 8. **📜 அசல் புத்தகப் பக்கப் பார்வை (Original Syllabus Viewer)**:
-   - One-click view of the uploaded page from the textbook (*Sahitya Sruthilaya Music College - Page 4*).
+   - One-click view of the syllabus textbook page (*Vocal Syllabus Grade 2 - Page 4*).
 
 ---
 

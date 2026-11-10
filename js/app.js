@@ -221,7 +221,7 @@
       <div class="section-banner">
         <div>
           <h2>📖 அறிமுறை தரம் 2 - முழுமையான பாடக் குறிப்புகள்</h2>
-          <p>சாகித்ய சுருதிலயா பாடத்திட்டத்தில் உள்ள 6 முக்கிய பாடத் தலைப்புகள், விவரிப்புகள் மற்றும் ஒலி மாதிரிகள்.</p>
+          <p>அறிமுறை தரம் 2 பாடத்திட்டத்தில் உள்ள 6 முக்கிய பாடத் தலைப்புகள், விவரிப்புகள் மற்றும் ஒலி மாதிரிகள்.</p>
         </div>
         <div class="filter-bar" style="margin: 0;">
           <button class="pill-btn ${state.activeTopicFilter === 'all' ? 'active' : ''}" onclick="window.appFilterTopic('all')">அனைத்து தலைப்புகளும் (All)</button>
