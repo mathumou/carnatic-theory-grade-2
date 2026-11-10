@@ -62,39 +62,10 @@ An interactive, kid-friendly web application designed to help young Carnatic voc
 
 ---
 
-## 🚀 How to Host on GitHub Pages (Step-by-Step)
+## 🌐 Live Website
 
-This project has **zero external build steps or dependencies** (pure HTML, CSS, JavaScript, and Web Audio API). You can publish it in 3 minutes:
-
-### Step 1: Create a GitHub Repository
-1. Go to [github.com/new](https://github.com/new).
-2. Name your repository (e.g. `carnatic-theory-grade-2` or `sangeethan-theory-grade-2`).
-3. Keep it **Public** (required for free GitHub Pages).
-4. Click **Create repository**.
-
-### Step 2: Push the Files to GitHub
-Open your terminal in this project folder and run:
-```bash
-git add .
-git commit -m "Initial commit: Carnatic Music Theory Grade 2 portal"
-git branch -M main
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>.git
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages
-1. Go to your repository on GitHub.
-2. Click **Settings** (top right tab).
-3. In the left sidebar, click **Pages** (under "Code and automation").
-4. Under **Build and deployment**:
-   - Source: **Deploy from a branch**
-   - Branch: **main**
-   - Folder: **/ (root)**
-5. Click **Save**.
-6. Wait 1-2 minutes. GitHub will provide you a live URL:
-   `https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPO_NAME>/`
-
-Your son can now access it on any phone, tablet, iPad, or computer anytime!
+The app is live at:
+👉 **[https://mathumou.github.io/carnatic-theory-grade-2/](https://mathumou.github.io/carnatic-theory-grade-2/)**
 
 ---
 
