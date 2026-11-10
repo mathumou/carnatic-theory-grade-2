@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b91c1c" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#grad)" />
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#fef08a" stroke-width="2" stroke-dasharray="4 2" />
+  <!-- Musical note & Veena motif -->
+  <path d="M22 42 A6 6 0 1 0 28 36 L28 18 L44 14 L44 34 A6 6 0 1 0 50 28 L50 12 L24 16 L24 38 A6 6 0 0 0 22 42 Z" fill="#fef08a" />
+</svg>

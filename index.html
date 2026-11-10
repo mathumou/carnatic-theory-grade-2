@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>கர்நாடக சங்கீத அறிமுறை தரம் 2 | Carnatic Music Theory Grade 2</title>
+  <meta name="description" content="சாகித்ய சுருதிலயா பாடத்திட்டத்தின் அடிப்படையில் அமைந்த கர்நாடக சங்கீத தரம் 2 அறிமுறைப் பாடங்கள், MCQ பயிற்சி, எழுத்துப் பயிற்சி மற்றும் மாதிரிப் பரீட்சை தளம்.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts for Tamil & Classical Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Mukta+Malar:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       APP HEADER
+       ========================================================================= -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-section">
+        <div class="brand-logo" aria-label="Logo">🪕</div>
+        <div class="brand-titles">
+          <h1>அறிமுறை தரம் - 2 (Theory Grade - 2)</h1>
+          <p>சாகித்ய சுருதிலயா இசைக்கல்லூரி பாடத்திட்டம் • Carnatic Music Academy</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Interactive Tanpura Drone -->
+        <div class="tanpura-widget">
+          <button class="btn-header" id="tanpuraBtn" title="சுருதிப் பெட்டி (Tanpura Drone)">
+            <span class="icon">🪕</span>
+            <span>சுருதி (Tanpura)</span>
+          </button>
+          <select id="pitchSelect" class="tanpura-select" title="சுருதி கட்டை தெரிவு செய்க (Select Pitch)">
+            <option value="261.63">C (1 கட்டை)</option>
+            <option value="277.18">C# (1.5 கட்டை)</option>
+            <option value="293.66">D (2 கட்டை)</option>
+            <option value="311.13">D# (2.5 கட்டை)</option>
+            <option value="329.63">E (3 கட்டை)</option>
+            <option value="349.23">F (4 கட்டை)</option>
+            <option value="392.00">G (5 கட்டை)</option>
+            <option value="440.00">A (6 கட்டை)</option>
+          </select>
+        </div>
+
+        <!-- View Textbook Syllabus Photo -->
+        <button class="btn-header" id="syllabusModalBtn" title="புத்தகப் பக்கத்தைப் பார்க்க">
+          <span>📜 பாடத்திட்டம் (Book Page)</span>
+        </button>
+
+        <!-- Language Switcher -->
+        <button class="btn-header" id="langToggle" title="மொழி மாற்றம்">
+          <span>🌐 இருமொழியும் (Bilingual)</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button class="btn-header" id="themeToggle" title="வெளிச்சம் / இருள் முறை">
+          <span>🌙 Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN NAVIGATION TABS
+       ========================================================================= -->
+  <nav class="main-nav" aria-label="Primary Navigation">
+    <div class="nav-container">
+      <button class="nav-tab active" data-tab="study">
+        <span>📖</span>
+        <span>பாடக் குறிப்புகள் (Notes)</span>
+      </button>
+      <button class="nav-tab" data-tab="flashcards">
+        <span>💡</span>
+        <span>நினைவு அட்டைகள் (Cards)</span>
+      </button>
+      <button class="nav-tab" data-tab="mcq">
+        <span>🎯</span>
+        <span>MCQ பயிற்சி (Quiz)</span>
+      </button>
+      <button class="nav-tab" data-tab="write">
+        <span>✍️</span>
+        <span>எழுத்துப் பயிற்சி (Write Drill)</span>
+      </button>
+      <button class="nav-tab" data-tab="trial-exam">
+        <span>📝</span>
+        <span>மாதிரிப் பரீட்சை (Trial Exam)</span>
+      </button>
+      <button class="nav-tab" data-tab="print-exam">
+        <span>🖨️</span>
+        <span>அச்சு வினாத்தாள் (Print Paper)</span>
+      </button>
+      <button class="nav-tab" data-tab="progress">
+        <span>📊</span>
+        <span>முன்னேற்றம் (Progress)</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       APP VIEWS CONTAINER
+       ========================================================================= -->
+  <main class="container">
+    <!-- View 1: Study Guide -->
+    <section class="view-section" id="studyView" style="display:block;">
+      <div id="studyViewContent"></div>
+    </section>
+
+    <!-- View 2: Flashcards -->
+    <section class="view-section" id="flashcardsView" style="display:none;">
+      <div id="flashcardsViewContent"></div>
+    </section>
+
+    <!-- View 3: MCQ Quiz -->
+    <section class="view-section" id="mcqView" style="display:none;">
+      <div id="mcqViewContent"></div>
+    </section>
+
+    <!-- View 4: Write Practice -->
+    <section class="view-section" id="writeView" style="display:none;">
+      <div id="writeViewContent"></div>
+    </section>
+
+    <!-- View 5: Trial Exam -->
+    <section class="view-section" id="trial-examView" style="display:none;">
+      <div id="trialExamViewContent"></div>
+    </section>
+
+    <!-- View 6: Printable Exam -->
+    <section class="view-section" id="print-examView" style="display:none;">
+      <div id="printExamViewContent"></div>
+    </section>
+
+    <!-- View 7: Progress & History -->
+    <section class="view-section" id="progressView" style="display:none;">
+      <div id="progressViewContent"></div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       SYLLABUS REFERENCE MODAL (Actual Uploaded Textbook Page)
+       ========================================================================= -->
+  <div class="modal-overlay" id="syllabusModal" style="display:none;">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close">✕</button>
+      <h3 style="color:var(--primary); margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+        <span>📜</span> பாடப் புத்தகத்தின் அசல் பக்கம் (Original Syllabus Reference)
+      </h3>
+      <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;">
+        வாய்ப்பாட்டு பாடத்திட்டம் தரம் 1 முதல் தரம் 7 வரை - பக்கம் 4 • அறிமுறை தரம் 2
+      </p>
+      <div style="border:1px solid var(--border); border-radius:var(--radius-md); overflow:hidden; text-align:center;">
+        <img 
+          src="assets/syllabus-page.jpg" 
+          alt="அறிமுறை தரம் 2 பாடத்திட்டம் - சாகித்ய சுருதிலயா இசைக்கல்லூரி" 
+          style="max-width:100%; height:auto; display:block; margin:0 auto;"
+        />
+      </div>
+      <div style="margin-top:1rem; text-align:right;">
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('syllabusModal').style.display='none'">
+          சரி (Done)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="no-print" style="background:var(--bg-card); border-top:1px solid var(--border); padding:2rem 1rem; margin-top:3rem; text-align:center; font-size:0.9rem; color:var(--text-secondary);">
+    <div style="max-width:900px; margin:0 auto;">
+      <p style="font-weight:600; color:var(--primary); font-size:1rem; margin-bottom:0.35rem;">
+        🎶 கர்நாடக இசை அறிமுறைத் தளம் • Carnatic Music Theory Practice Portal
+      </p>
+      <p style="margin-bottom:0.75rem;">
+        பாடத்திட்ட குறிப்பு: சாகித்ய சுருதிலயா இசைக்கல்லூரி (Sahitya Sruthilaya Music College) - அறிமுறை தரம் 2.
+      </p>
+      <p style="font-size:0.8rem; color:var(--text-muted);">
+        மாணவர்கள் மீண்டும் மீண்டும் எழுதிப் பழகவும், தேர்வில் முழு மதிப்பெண் பெறவும் பிரத்யேகமாக உருவாக்கப்பட்டது.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
